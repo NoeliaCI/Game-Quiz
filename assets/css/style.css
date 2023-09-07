@@ -14,96 +14,142 @@ body {
     font-family: 'Mouse Memoirs', sans-serif;
     height: 800px;
     background-color: #f4d71e;
-    
 
-    
+
+
 }
 
 main {
-    
-        display: grid;
-        align-self: center;
-        grid-gap: 1rem;
-        justify-content: center;
+
+    display: grid;
+    align-self: center;
+    grid-gap: 1rem;
+    justify-content: center;
 }
 
 header {
     height: 400px;
-    
+
 }
 
 .main-image {
     display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
 header h1 {
     color: rgb(39, 38, 38);
     font-size: 120px;
     font-weight: lighter;
     text-align: center;
     text-shadow: 1px 1px 1px #f2dd56,
-            1px 2px 1px #393838,
-            1px 3px 1px #393838,
-            1px 4px 1px #393838,
-            1px 5px 1px #393838,
-            1px 6px 1px #393838,
-            1px 7px 1px #393838,
-            1px 8px 1px #393838,
-            1px 9px 1px #393838,
-            1px 10px 1px #393838,
-            1px 18px 6px rgba(16, 16, 16, 0.4),
-            1px 22px 10px rgba(16, 16, 16, 0.2),
-            1px 25px 35px rgba(16, 16, 16, 0.2),
-            1px 30px 60px rgba(16, 16, 16, 0.4);
+        1px 2px 1px #f9f9f9,
+        1px 3px 1px #f9f9f9,
+        1px 4px 1px #f9f9f9,
+        1px 5px 1px #f9f9f9,
+        1px 6px 1px #f9f9f9,
+        1px 7px 1px #f9f9f9,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .quiz-container {
-        background-color: rgba(0, 0, 0);
-        border: 2px #f9f9f9 solid;
-        border-radius: 20px;
-        outline: 1px solid #f9f9f9;
-        outline-offset: -6px;
-        height: 500px;
-        width: 100%;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        padding: 20px;
-        
-        justify-self: center;
+    background-color: rgba(0, 0, 0);
+    border: 2px #f9f9f9 solid;
+    border-radius: 20px;
+    outline: 1px solid #f9f9f9;
+    outline-offset: -6px;
+    height: 500px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 20px;
+
+    justify-self: center;
 }
+
 .top-info {
     height: 50px;
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-        border-bottom: 1px solid #f9f9f9;
-        
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid #f9f9f9;
+
 }
+
 .home-buttons {
-        display: grid;
-        grid-template-columns: 3fr;
-        justify-items: center;
-        align-items: center;
-       
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-items: center;
+    align-items: center;
+
 }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #F4F6F1;
+    transition: 0.4s;
+    border-radius: 1rem;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.8rem;
+    width: 0.8rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+    background-color: black;
+    transition: 0.4s;
+    border-radius: 0.8rem;
+}
+
+input:checked+.slider {
+    background-color: #f4d71e;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1rem);
+}
+
+::before {}
+
 .play-button,
 .leaderboard-button,
 .how-to-play-button {
     padding: 16px;
-        margin-top: 5%;
-        background-color: #f4d71e;
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-            width: 70%;
-            border-radius: 20px;
-            border: 2px #fff9e6 solid;
-                outline: 2px solid rgba(0, 0, 0);
-                outline-offset: -8px;
-                font-family: 'Mouse Memoirs', sans-serif;
+    margin-top: 5%;
+    background-color: #f4d71e;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px #fff9e6 solid;
+    outline: 2px solid rgba(0, 0, 0);
+    outline-offset: -8px;
+    font-family: 'Mouse Memoirs', sans-serif;
 
 }
