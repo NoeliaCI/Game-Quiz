@@ -92,6 +92,7 @@ header h1 {
     align-items: center;
 
 }
+
 .switch {
     position: relative;
     display: inline-block;
@@ -128,7 +129,7 @@ header h1 {
 }
 
 input:checked+.slider {
-    background-color: #f4d71e;
+    background-color: #F4F6F1;
 }
 
 input:checked+.slider:before {
@@ -153,3 +154,23 @@ input:checked+.slider:before {
     font-family: 'Mouse Memoirs', sans-serif;
 
 }
+
+/* Footer */
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+#audio-container p {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 15px;
+    padding: 10px;
+
+}
+
+#media-player {
+    height: 50px;
+    padding: 10px;
