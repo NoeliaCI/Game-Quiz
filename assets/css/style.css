@@ -61,14 +61,30 @@ header h1 {
 
 .quiz-container {
         background-color: rgba(0, 0, 0);
-        border: 2px #fff9e6 solid;
-        outline: 1px solid #fff9e6;
+        border: 2px #f9f9f9 solid;
+        border-radius: 20px;
+        outline: 1px solid #f9f9f9;
         outline-offset: -6px;
         height: 500px;
         width: 100%;
         margin-top: 5%;
         margin-bottom: 3%;
         padding: 20px;
-        box-shadow: 5px 5px 100px #fff9e6;
+        box-shadow: 5px 5px 100px #f9f9f9;
         justify-self: center;
+}
+.top-info {
+    height: 50px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 1px solid #f9f9f9;
+        
+}
+.audio-button {
+    align-self: right;
+    
 }
