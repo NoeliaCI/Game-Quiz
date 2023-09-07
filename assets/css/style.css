@@ -158,10 +158,11 @@ input:checked+.slider:before {
 /* Footer */
 
 footer {
-    display: inline-flex;
-    justify-content: center;
+    position: relative;
+    text-align: center;
 }
 
+/* Media Player Section */
 
 #audio-container p {
     font-size: 25px;
@@ -173,4 +174,23 @@ footer {
 
 #media-player {
     height: 50px;
-    padding: 10px;
+    padding: 10px
+}
+
+/* Social Media section */
+
+.social-media {
+    margin: 10px;
+}
+
+.social-media>li {
+    display: inline;
+}
+
+.social-media i {
+    color: black;
+    font-size: 200%;
+   
+    margin: 1px;
+    padding: 20px;
+}
