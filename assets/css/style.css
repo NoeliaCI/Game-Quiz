@@ -69,7 +69,8 @@ header h1 {
     margin-bottom: 3%;
     padding: 20px;
 
-    justify-self: center;
+   
+    
 }
 
 .top-info {
@@ -85,12 +86,21 @@ header h1 {
 
 }
 
+ 
+
 .home-buttons {
     display: grid;
     grid-template-columns: 3fr;
     justify-items: center;
     align-items: center;
 
+}
+
+button:hover {
+    background: #e3ddb2;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
 }
 
 .switch {
@@ -138,9 +148,7 @@ input:checked+.slider:before {
 
 ::before {}
 
-.play-button,
-.leaderboard-button,
-.how-to-play-button {
+.button {
     padding: 16px;
     margin-top: 5%;
     background-color: #f4d71e;
