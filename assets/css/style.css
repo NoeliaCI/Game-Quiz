@@ -8,15 +8,27 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #f4d71e;
-}
 
 body {
     display: grid;
     font-family: 'Mouse Memoirs', sans-serif;
+    height: 800px;
+    background-color: #f4d71e;
     
 
+    
+}
+
+main {
+    
+        display: grid;
+        align-self: center;
+        grid-gap: 1rem;
+        justify-content: center;
+}
+
+header {
+    height: 400px;
     
 }
 
@@ -28,7 +40,7 @@ body {
 }
 header h1 {
     color: rgb(39, 38, 38);
-    font-size: 130px;
+    font-size: 120px;
     font-weight: lighter;
     text-align: center;
     text-shadow: 1px 1px 1px #f2dd56,
@@ -45,4 +57,18 @@ header h1 {
             1px 22px 10px rgba(16, 16, 16, 0.2),
             1px 25px 35px rgba(16, 16, 16, 0.2),
             1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.quiz-container {
+        background-color: rgba(0, 0, 0);
+        border: 2px #fff9e6 solid;
+        outline: 1px solid #fff9e6;
+        outline-offset: -6px;
+        height: 500px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        padding: 20px;
+        box-shadow: 5px 5px 100px #fff9e6;
+        justify-self: center;
 }
