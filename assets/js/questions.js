@@ -3,10 +3,10 @@ const questions = [
 
         question: "Who is the creator of ‘The Simpsons’?",
         answers: [
-            { texto: "Trey Parker and Matt Stone", correct: false },
-            { texto: "Seth MacFarlane", correct: false },
-            { texto: "Hanna-Barbera", correct: false },
-            { texto: "Matt Groening", correct: true },
+            { text: "Trey Parker and Matt Stone", correct: false },
+            { text: "Seth MacFarlane", correct: false },
+            { text: "Hanna-Barbera", correct: false },
+            { text: "Matt Groening", correct: true },
         ]
 
     },
@@ -15,40 +15,40 @@ const questions = [
 
         question: "What is the name of the clown who hosts a children’s television show in Springfield?",
         answers: [
-            { texto: "Pennywise", correct: false },
-            { texto: "Krusty the Clown", correct: true },
-            { texto: "Ronald McDonald", correct: false },
-            { texto: "Bozo the Clown", correct: false },
+            { text: "Pennywise", correct: false },
+            { text: "Krusty the Clown", correct: true },
+            { text: "Ronald McDonald", correct: false },
+            { text: "Bozo the Clown", correct: false },
         ]
     },
     {
 
         question: "Who shot Mr. Burns?",
         answers: [
-            { texto: "Bart Simpson", correct: false },
-            { texto: "Mrs. Krabappel", correct: false },
-            { texto: "Homer Simpson", correct: false },
-            { texto: "Maggie Simpson", correct: true },
+            { text: "Bart Simpson", correct: false },
+            { text: "Mrs. Krabappel", correct: false },
+            { text: "Homer Simpson", correct: false },
+            { text: "Maggie Simpson", correct: true },
         ]
     },
     {
 
         question: "Which Springfield resident has a twin brother named Herb?",
         answers: [
-            { texto: "Ned Flanders", correct: false },
-            { texto: "Moe", correct: false },
-            { texto: "Homer Simpson", correct: true },
-            { texto: "Sideshow Bob", correct: false },
+            { text: "Ned Flanders", correct: false },
+            { text: "Moe", correct: false },
+            { text: "Homer Simpson", correct: true },
+            { text: "Sideshow Bob", correct: false },
         ]
     },
     {
 
         question: "Who voices Moe in The Simpson?",
         answers: [
-            { texto: "Robert Downey Jr.", correct: false },
-            { texto: "Chris Evans", correct: false },
-            { texto: "Hank Azaria", correct: true },
-            { texto: "Christopher Collins", correct: false },
+            { text: "Robert Downey Jr.", correct: false },
+            { text: "Chris Evans", correct: false },
+            { text: "Hank Azaria", correct: true },
+            { text: "Christopher Collins", correct: false },
         ]
     },
     {
@@ -56,29 +56,29 @@ const questions = [
 
         question: "Who is the teacher of Bart’s class at Springfield Elementary?",
         answers: [
-            { texto: "Mrs. Vanderbilt", correct: false },
-            { texto: "Mrs. Krabappel", correct: true },
-            { texto: "Miss Hoover", correct: false },
-            { texto: "Mrs. Glick", correct: false },
+            { text: "Mrs. Vanderbilt", correct: false },
+            { text: "Mrs. Krabappel", correct: true },
+            { text: "Miss Hoover", correct: false },
+            { text: "Mrs. Glick", correct: false },
         ]
     },
     {
 
         question: "What is the name of the school bus driver?",
         answers: [
-            { texto: "Otto Mann", correct: true },
-            { texto: "Barney Gumble", correct: false },
-            { texto: "Kent Brockman", correct: false },
-            { texto: "Troy McClure", correct: false },
+            { text: "Otto Mann", correct: true },
+            { text: "Barney Gumble", correct: false },
+            { text: "Kent Brockman", correct: false },
+            { text: "Troy McClure", correct: false },
         ]
     },
     {
         question: "What instrument does Lisa play in her school band?",
         answers: [
-            { texto: "Clarinet", correct: false },
-            { texto: "Flute", correct: false },
-            { texto: "Saxophone", correct: true },
-            { texto: "Trombone", correct: false },
+            { text: "Clarinet", correct: false },
+            { text: "Flute", correct: false },
+            { text: "Saxophone", correct: true },
+            { text: "Trombone", correct: false },
         ]
 
     },
@@ -86,219 +86,219 @@ const questions = [
 
         question: "What is the name of the elephant Bart wins in a radio contest?",
         answers: [
-            { texto: "Stampy", correct: true },
-            { texto: "Trunky", correct: false },
-            { texto: "Jumbo", correct: false },
-            { texto: "Horton", correct: false },
+            { text: "Stampy", correct: true },
+            { text: "Trunky", correct: false },
+            { text: "Jumbo", correct: false },
+            { text: "Horton", correct: false },
         ]
     },
     {
 
         question: "In Season 6, Homer joins an ancient secret society called what?",
         answers: [
-            { texto: "The Knights Templar", correct: false },
-            { texto: "The Illuminati", correct: false },
-            { texto: "The Freemasons", correct: false },
-            { texto: "The Stonecutters", correct: true },
+            { text: "The Knights Templar", correct: false },
+            { text: "The Illuminati", correct: false },
+            { text: "The Freemasons", correct: false },
+            { text: "The Stonecutters", correct: true },
         ]
     },
     {
 
         question: "What is the name of the bowling instructor Marge develops a crush on?",
         answers: [
-            { texto: "Lionel", correct: false },
-            { texto: "Francois", correct: false },
-            { texto: "Jacques", correct: true },
-            { texto: "Jean", correct: false },
+            { text: "Lionel", correct: false },
+            { text: "Francois", correct: false },
+            { text: "Jacques", correct: true },
+            { text: "Jean", correct: false },
         ]
     },
     {
 
         question: "Which character is obsessed with getting revenge on Bart?",
         answers: [
-            { texto: "Krusty the Clown", correct: false },
-            { texto: "Sideshow Bob", correct: true },
-            { texto: "Fat Tony", correct: false },
-            { texto: "Nelson Muntz", correct: false },
+            { text: "Krusty the Clown", correct: false },
+            { text: "Sideshow Bob", correct: true },
+            { text: "Fat Tony", correct: false },
+            { text: "Nelson Muntz", correct: false },
         ]
     },
     {
 
         question: "What is the full name of Moe, the owner of Moe’s Tavern?",
         answers: [
-            { texto: "Moe Slovak", correct: false },
-            { texto: "Moe Szyslak", correct: true },
-            { texto: "Moe Sawicki", correct: false },
-            { texto: "Moe Sadowski", correct: false },
+            { text: "Moe Slovak", correct: false },
+            { text: "Moe Szyslak", correct: true },
+            { text: "Moe Sawicki", correct: false },
+            { text: "Moe Sadowski", correct: false },
         ]
     },
     {
 
         question: "What is the vehicle Homer designs called?",
         answers: [
-            { texto: "Convert-a-Car", correct: false },
-            { texto: "The Buzzwagon", correct: false },
-            { texto: "The Homer", correct: true },
-            { texto: "Turbo Donut", correct: false },
+            { text: "Convert-a-Car", correct: false },
+            { text: "The Buzzwagon", correct: false },
+            { text: "The Homer", correct: true },
+            { text: "Turbo Donut", correct: false },
         ]
     },
     {
 
         question: "In which season did Ralph Wiggum first appear?",
         answers: [
-            { texto: "Season 1", correct: true },
-            { texto: "Season 2", correct: false },
-            { texto: "Season 3", correct: false },
-            { texto: "Season 4", correct: false },
+            { text: "Season 1", correct: true },
+            { text: "Season 2", correct: false },
+            { text: "Season 3", correct: false },
+            { text: "Season 4", correct: false },
         ]
     },
     {
 
         question: "Which pop artist’s Super Bowl half-time show was supposedly predicted in ‘The Simpsons’?",
         answers: [
-            { texto: "Madonna", correct: false },
-            { texto: "Beyoncé", correct: false },
-            { texto: "Janet Jackson", correct: false },
-            { texto: "Lady Gaga", correct: true },
+            { text: "Madonna", correct: false },
+            { text: "Beyoncé", correct: false },
+            { text: "Janet Jackson", correct: false },
+            { text: "Lady Gaga", correct: true },
         ]
     },
     {
 
         question: "What is Springfield’s local newspaper called?",
         answers: [
-            { texto: "The Springfield Times", correct: false },
-            { texto: "The Springfield Shopper", correct: true },
-            { texto: "The Springfield Post", correct: false },
-            { texto: "The Springfield Journal", correct: false },
+            { text: "The Springfield Times", correct: false },
+            { text: "The Springfield Shopper", correct: true },
+            { text: "The Springfield Post", correct: false },
+            { text: "The Springfield Journal", correct: false },
         ]
     },
     {
 
         question: "Which acclaimed physicist made a guest appearance as himself?",
         answers: [
-            { texto: "Edward Witten", correct: false },
-            { texto: "Alan Guth", correct: false },
-            { texto: "Peter Higgs", correct: false },
-            { texto: "Stephen Hawking", correct: true },
+            { text: "Edward Witten", correct: false },
+            { text: "Alan Guth", correct: false },
+            { text: "Peter Higgs", correct: false },
+            { text: "Stephen Hawking", correct: true },
         ]
     },
     {
 
         question: "Who voiced Bart’s girlfriend Jessica?",
         answers: [
-            { texto: "Emma Thompson", correct: false },
-            { texto: "Meryl Streep", correct: true },
-            { texto: "Helen Mirren", correct: false },
-            { texto: "Goldie Hawn", correct: false },
+            { text: "Emma Thompson", correct: false },
+            { text: "Meryl Streep", correct: true },
+            { text: "Helen Mirren", correct: false },
+            { text: "Goldie Hawn", correct: false },
         ]
     },
     {
 
         question: "In what year did The Simpsons first air?",
         answers: [
-            { texto: "1987", correct: false },
-            { texto: "1989", correct: true },
-            { texto: "1990", correct: false },
-            { texto: "1992", correct: false },
+            { text: "1987", correct: false },
+            { text: "1989", correct: true },
+            { text: "1990", correct: false },
+            { text: "1992", correct: false },
         ]
     },
     {
 
         question: "What fruit does Homer build out of ham cubes?",
         answers: [
-            { texto: "Pear", correct: false },
-            { texto: "Orange", correct: false },
-            { texto: "Apple", correct: true },
-            { texto: "Pineapple", correct: false },
+            { text: "Pear", correct: false },
+            { text: "Orange", correct: false },
+            { text: "Apple", correct: true },
+            { text: "Pineapple", correct: false },
         ]
     },
     {
 
         question: "Bart and Milhouse’s favourite comic book character is known as what?",
         answers: [
-            { texto: "Bumblebee Man", correct: false },
-            { texto: "Spiderman", correct: false },
-            { texto: "Batman", correct: false },
-            { texto: "Radioactive Man", correct: true },
+            { text: "Bumblebee Man", correct: false },
+            { text: "Spiderman", correct: false },
+            { text: "Batman", correct: false },
+            { text: "Radioactive Man", correct: true },
         ]
     },
     {
 
         question: "What is the secret ingredient in the Flaming Moe cocktail?",
         answers: [
-            { texto: "Cough syrup", correct: true },
-            { texto: "Maple syrup", correct: false },
-            { texto: "Mouthwash", correct: false },
-            { texto: "Golden syrup", correct: false },
+            { text: "Cough syrup", correct: true },
+            { text: "Maple syrup", correct: false },
+            { text: "Mouthwash", correct: false },
+            { text: "Golden syrup", correct: false },
         ]
     },
     {
 
         question: "What is the name of Ned Flanders’s first wife?",
         answers: [
-            { texto: "Martha", correct: false },
-            { texto: "Mildred", correct: false },
-            { texto: "Maude", correct: true },
-            { texto: "Madison", correct: false },
+            { text: "Martha", correct: false },
+            { text: "Mildred", correct: false },
+            { text: "Maude", correct: true },
+            { text: "Madison", correct: false },
         ]
     },
     {
 
         question: "What is the name of the amusement park in Springfield?",
         answers: [
-            { texto: "Neverland", correct: false },
-            { texto: "Scratchyland", correct: false },
-            { texto: "Krustyland", correct: true },
-            { texto: "Homerland", correct: false },
+            { text: "Neverland", correct: false },
+            { text: "Scratchyland", correct: false },
+            { text: "Krustyland", correct: true },
+            { text: "Homerland", correct: false },
         ]
     },
     {
 
         question: "Which character’s catchphrase is “Ha-Ha!”?",
         answers: [
-            { texto: "Grampa Simpson", correct: false },
-            { texto: "Ralph Wiggum", correct: false },
-            { texto: "Squeaky-Voiced Teen", correct: false },
-            { texto: "Nelson Muntz", correct: true },
+            { text: "Grampa Simpson", correct: false },
+            { text: "Ralph Wiggum", correct: false },
+            { text: "Squeaky-Voiced Teen", correct: false },
+            { text: "Nelson Muntz", correct: true },
         ]
     },
     {
 
         question: "Which store is located right next to Moe’s Tavern?",
         answers: [
-            { texto: "King Toot’s Music Store", correct: true },
-            { texto: "Kwik-E-Mart", correct: false },
-            { texto: "The Leftorium", correct: false },
-            { texto: "Lard Lad Donuts", correct: false },
+            { text: "King Toot’s Music Store", correct: true },
+            { text: "Kwik-E-Mart", correct: false },
+            { text: "The Leftorium", correct: false },
+            { text: "Lard Lad Donuts", correct: false },
         ]
     },
     {
         question: "Who is the leader of the infamous Springfield Mafia?",
         answers: [
-            { texto: "Luigi Risotto", correct: false },
-            { texto: "Frankie the Squealer", correct: false },
-            { texto: "Fat Tony", correct: true },
-            { texto: "Johnny Tightlips", correct: false },
+            { text: "Luigi Risotto", correct: false },
+            { text: "Frankie the Squealer", correct: false },
+            { text: "Fat Tony", correct: true },
+            { text: "Johnny Tightlips", correct: false },
         ]
     },
     {
 
         question: "What is the name of Springfield’s resident news anchor?",
         answers: [
-            { texto: "Brent Stockman", correct: false },
-            { texto: "Kent Brockman", correct: true },
-            { texto: "Krusty the Clown", correct: false },
-            { texto: "Godfrey Jones", correct: false },
+            { text: "Brent Stockman", correct: false },
+            { text: "Kent Brockman", correct: true },
+            { text: "Krusty the Clown", correct: false },
+            { text: "Godfrey Jones", correct: false },
         ]
     },
     {
 
         question: "In what year was ‘The Simpsons Movie’ released?",
         answers: [
-            { texto: "2004", correct: false },
-            { texto: "2005", correct: false },
-            { texto: "2007", correct: true },
-            { texto: "2008", correct: false },
+            { text: "2004", correct: false },
+            { text: "2005", correct: false },
+            { text: "2007", correct: true },
+            { text: "2008", correct: false },
         ]
     },
 ];
