@@ -182,6 +182,36 @@ input:checked+.slider:before {
     list-style-type: none;
 }
 
+/* Leaderboard Screen */
+
+.leaderboard-content {
+        display: grid;
+        justify-content: center;
+        
+        margin-bottom: 25px;
+        margin-top: 20px;
+        color: #F4F6F1;
+        
+}
+
+
+.leaderboard-content h2 {
+    font-size: 2.5em;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#leaderboard-home-btn {
+        font-size: 2em;
+        max-width: 85%;
+        margin-top: 25%;
+        margin-left: 15%;
+        
+        
+       
+    
+    
+}
 /* Footer */
 
 footer {
