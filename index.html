@@ -32,25 +32,25 @@
           class="main-image"
           src="assets/images/The-Simpsons-Transparent-Background.png"
           alt="The Simpsons watching you play from their couch"
-          height="300px"
-          width="500px"
+          height="300"
+          width="500"
         />
       </header>
-    
+
       <section class="quiz-container">
         <!-- Home screen-->
-        <!--
-        <div id="home" class="=home-container">
+
+        <div id="home" class="=home-container hide">
           <div class="top-info">
             <div>
               <i class="fa-solid fa-house fa-xl" style="color: #f9f9f9"></i>
             </div>
             <div class="game-sounds-container">
-                <p style="color:#f9f9f9">Sound</p>
-                <label class="switch">
-                    <input id="sound-slider" type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
+              <p style="color: #f9f9f9">Sound</p>
+              <label class="switch">
+                <input class="sound-slider" type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
             </div>
           </div>
           <div class="home-container">
@@ -61,97 +61,141 @@
             </div>
           </div>
         </div>
-    -->
-        <!-- How to play screen-->
-        
-        <div id="how-to-play" class="how-to-play-container">
+
+        <!-- How to play screen -->
+
+        <div id="how-to-play" class="=how-to-play-container hide">
+          <div class="top-info">
+            <div>
+              <i class="fa-solid fa-house fa-xl" style="color: #f9f9f9"></i>
+            </div>
+            <div class="game-sounds-container">
+              <p style="color: #f9f9f9">Sound</p>
+              <label class="switch">
+                <input class="sound-slider" type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="how-to-play-content">
+            <h2>How To Play</h2>
+            <div>
+              <ul>
+                <li>
+                  This quiz will test your knowdlege on The Simpsons Series
+                </li>
+                <li>
+                  Answer the question by selecting one of the 4 answer choices.
+                </li>
+                <li>You have 15 seconds to submit your choice.</li>
+                <li>
+                  Right answers will be marked green, wrong answers will be
+                  marked red.
+                </li>
+                <li>
+                  At the end of the game you can save your score and check your
+                  place in the leaderboard.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>Good luck and have fun!</p>
+            </div>
+            <div>
+              <button id="how-to-play-home-btn" class="button">Home</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leaderboard Screen -->
+
+        <div id="leaderboard" class="leaderboard-container hide">
+          <div class="top-info">
+            <div>
+              <i class="fa-solid fa-house fa-xl" style="color: #f9f9f9"></i>
+            </div>
+            <div class="game-sounds-container">
+              <p style="color: #f9f9f9">Sound</p>
+              <label class="switch">
+                <input class="sound-slider" type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="leaderboard-content">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+            <div>
+              <button id="leaderboard-home-btn" class="button">Home</button>
+            </div>
+          </div>
+        </div>
+        <!-- Start quiz screen -->
+        <div id="start-quiz" class="start-quiz-container">
             <div class="top-info">
                 <div>
                     <i class="fa-solid fa-house fa-xl" style="color: #f9f9f9"></i>
                 </div>
                 <div class="game-sounds-container">
-                    <p style="color:#f9f9f9">Sound</p>
+                    <p style="color: #f9f9f9">Sound</p>
                     <label class="switch">
-                        <input id="sound-slider" type="checkbox" checked>
+                        <input class="sound-slider" type="checkbox" checked />
                         <span class="slider"></span>
                     </label>
                 </div>
             </div>
-            <div class="how-to-play-content">
-                <h2>How To Play</h2>
-                <div>
-                    <ul>
-                        <li>This quiz will test your knowdlege on The Simpsons Series</li>
-                        <li>Answer the question by selecting one of the 4 answer choices.</li>
-                        <li>You have 15 seconds to submit your choice.</li>
-                        <li>Right answers will be marked green, wrong answers will be marked red.</li>
-                        <li>At the end of the game you can save your score and check your place in the leaderboard.</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Good luck and have fun!</p>
-                </div>
-                <div>
-                    <button id="how-to-play-home-btn" class="button">Home</button>
-                </div>
-            </div>  
-        </div>
+            <div class="start-quiz-content">
+                <h2>Are you ready to play?</h2>
+                <button id="start-btn" class="button">Start</button>
 
-<!-- Leaderboard Screen -->
-<!--
-<div id="leaderboard" class="leaderboard-container">
-    <div class="top-info">
-        <div>
-            <i class="fa-solid fa-house fa-xl" style="color: #f9f9f9"></i>
-        </div>
-        <div class="game-sounds-container">
-            <p style="color:#f9f9f9">Sound</p>
-            <label class="switch">
-                <input id="sound-slider" type="checkbox" checked>
-                <span class="slider"></span>
-            </label>
-        </div>
-    </div>
-    <div class="leaderboard-content">
-        <h2>Leaderboard</h2>
-        <ul id="leaderboard-list"></ul>
-    <div>
-        <button id="leaderboard-home-btn" class="button">Home</button>
-    </div>
-</div>
--->
+            </div>
       </section>
     </main>
     <!-- Footer -->
     <footer>
-        <!-- Media Player -->
-        <div id="audio-container">
-            <p><i class="fas fa-music"></i> The Simpsons Theme Song</p>
-            <audio id="media-player" controls>
-                <source src="assets/sounds/The_Simpsons_Theme_Song.mp3" type="audio/mpeg">
-                Your browser does not support the HTML5 audio tag.
-            </audio>
-
-        </div>
-        <!-- Social Media Links -->
-        <div>
-            <ul class="social-media">
-                <li>
-                    <a href="https://www.facebook.com/TheSimpsons/" target="_blank" rel="noopener"
-                        aria-label="visit our Facebook page (it opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="visit our YouTube page (it opens in a new tab)"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/thesimpsons/" target="_blank" rel="noopener"
-                        aria-label="visit our Instagram page (it opens in a new tab)"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-
+      <!-- Media Player -->
+      <div id="audio-container">
+        <p><i class="fas fa-music"></i> The Simpsons Theme Song</p>
+        <audio id="media-player" controls>
+          <source
+            src="assets/sounds/The_Simpsons_Theme_Song.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the HTML5 audio tag.
+        </audio>
+      </div>
+      <!-- Social Media Links -->
+      <div>
+        <ul class="social-media">
+          <li>
+            <a
+              href="https://www.facebook.com/TheSimpsons/"
+              target="_blank"
+              rel="noopener"
+              aria-label="visit our Facebook page (it opens in a new tab)"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="visit our YouTube page (it opens in a new tab)"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/thesimpsons/"
+              target="_blank"
+              rel="noopener"
+              aria-label="visit our Instagram page (it opens in a new tab)"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
   </body>
 </html>
