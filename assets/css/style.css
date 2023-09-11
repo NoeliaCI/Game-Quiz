@@ -220,12 +220,33 @@ input:checked+.slider:before {
         max-width: 85%;
         margin-top: 25%;
         margin-left: 15%;
-        
-        
-       
-    
     
 }
+
+/* Start Quiz Screen */
+
+.start-quiz-content {
+    display: grid;
+    justify-content: center;    
+    color: #F4F6F1;
+}
+
+.start-quiz-content h2 {
+    font-size: 3em;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 40px;
+}
+.start-quiz-content .button {
+    font-size: 3em;
+    max-width: 85%;
+    margin-top: 25%;
+    margin-left: 15%;
+    
+}
+
+
 /* Footer */
 
 footer {
