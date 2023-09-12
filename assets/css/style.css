@@ -69,8 +69,8 @@ header h1 {
     margin-bottom: 3%;
     padding: 20px;
 
-   
-    
+
+
 }
 
 .top-info {
@@ -87,7 +87,8 @@ header h1 {
 
 }
 
- /* Home Screen */
+/* Home Screen */
+
 
 .home-buttons {
     display: grid;
@@ -154,7 +155,7 @@ input:checked+.slider:before {
 .button {
     padding: 16px;
     margin-top: 5%;
-    
+
     background-color: #f4d71e;
     font-size: 2.5rem;
     letter-spacing: 2px;
@@ -170,23 +171,24 @@ input:checked+.slider:before {
 /* How To Play Screen */
 
 .how-to-play-content {
-     display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100%;
-        text-align: center;
-        font-size: 1.5em;
-        padding-top: 1rem;
-        line-height: 2.3rem;
-        color: #F4F6F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    line-height: 2.3rem;
+    color: #F4F6F1;
 }
+
 .how-to-play-content h2 {
     font-size: 2em;
-        letter-spacing: 0.5rem;
-        text-align: center;
-        
-        
+    letter-spacing: 0.5rem;
+    text-align: center;
+
+
 }
 
 .how-to-play-content li {
@@ -196,19 +198,20 @@ input:checked+.slider:before {
 
 #how-to-play-home-btn {
     font-size: 2rem;
-    min-width: fit-content;    
-        
+    min-width: fit-content;
+
 }
+
 /* Leaderboard Screen */
 
 .leaderboard-content {
-        display: grid;
-        justify-content: center;
-        
-        margin-bottom: 25px;
-        margin-top: 20px;
-        color: #F4F6F1;
-        
+    display: grid;
+    justify-content: center;
+
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color: #F4F6F1;
+
 }
 
 
@@ -216,104 +219,103 @@ input:checked+.slider:before {
     font-size: 2.5em;
     letter-spacing: 0.5rem;
     text-align: center;
-    
+
 }
 
 #leaderboard-home-btn {
-        font-size: 2em;
-        max-width: 85%;
-        margin-top: 25%;
-        margin-left: 15%;
-    
+    font-size: 2em;
+    max-width: 85%;
+    margin-top: 25%;
+    margin-left: 15%;
+
 }
 
 /* Start Quiz Screen */
 
 .start-quiz-content {
     display: grid;
-    justify-content: center;    
+    justify-content: center;
     color: #F4F6F1;
 }
 
 .start-quiz-content h2 {
     font-size: 3em;
-        letter-spacing: 0.5rem;
-        text-align: center;
-        margin-top: 15%;
-        margin-bottom: 40px;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 40px;
 }
+
 .start-quiz-content .button {
     font-size: 3em;
     max-width: 85%;
     margin-top: 25%;
     margin-left: 15%;
-    
+
 }
 
 /* Quiz Questions Screen */
 
- .score {
+.score {
     font-size: 1.5em;
- }
+}
+
 .question {
 
     color: #F4F6F1;
-    font-size: 2rem ;
+    font-size: 2rem;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 30px;
 }
+
 .answer-buttons {
     display: grid;
     justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 10px;
-        width: 100%;
-        font-size: 2.5rem;
-        margin-top: auto;
-           
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: auto;
+
 
 }
 
 .answer-btn {
     justify-self: center;
-        height: 80px;
-        width: 60%;
-        font-size: 1.2rem;
-        padding: 10px;
-        background-color: #f4d71e;
-        border-radius: 20px;
-            border: 2px #fff9e6 solid;
-            outline: 2px solid rgba(0, 0, 0);
-            outline-offset: -8px;
-            font-family: 'Mouse Memoirs', sans-serif;
-            font-size: 1.8rem;
-        
+    height: 80px;
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #f4d71e;
+    border-radius: 20px;
+    border: 2px #fff9e6 solid;
+    outline: 2px solid rgba(0, 0, 0);
+    outline-offset: -8px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.8rem;
+
 }
 
 #next {
-        
-                max-width: 20%;
-                justify-self: center;
-                font-size: 1.4rem;
-               
-                
-        
+    max-width: 20%;
+    justify-self: center;
+    font-size: 1.4rem;
 }
-
-
 
 .quiz-footer {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-        align-items: center;
+    align-items: center;
 }
+
 .question-total {
     color: #F4F6F1;
     font-size: 1.2rem;
 }
+
 /* Results screen */
 
 .percentage-container {
@@ -324,7 +326,8 @@ input:checked+.slider:before {
     margin-left: 30%;
     margin-top: 15px;
 }
- .circular-progress {
+
+.circular-progress {
     position: relative;
     width: 250px;
     height: 250px;
@@ -334,6 +337,7 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
 }
+
 .percentage-container .circular-progress::before {
     content: "";
     position: absolute;
@@ -342,11 +346,13 @@ input:checked+.slider:before {
     background: black;
     border-radius: 50%;
 }
+
 .circular-progress .progress-value {
     position: relative;
     font-size: 2.8rem;
     font-weight: 600;
 }
+
 .progress-value {
     color: #F4F6F1;
 }
@@ -363,21 +369,24 @@ input:checked+.slider:before {
     letter-spacing: 4px;
     text-align: center;
 }
+
 .result-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
-    
+
+
 }
-.result-box button{
+
+.result-box button {
     font-size: 1.5rem;
     width: 30%;
-    
-    
-    
+
+
+
 }
+
 /* Footer */
 
 footer {
@@ -413,7 +422,7 @@ footer {
 .social-media i {
     color: black;
     font-size: 200%;
-   
+
     margin: 1px;
     padding: 20px;
 }
@@ -421,4 +430,23 @@ footer {
 
 .hide {
     display: none;
+}
+
+/*Media Queries*/
+
+/* Media Queries for tablets */
+@media screen and (max-width:768px) {
+    .quiz-container {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+    /* Home Screen */
+
+    .home-container {
+        width: 100%;
+    }
 }
