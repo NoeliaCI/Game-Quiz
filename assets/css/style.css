@@ -254,15 +254,22 @@ input:checked+.slider:before {
 .questions-container p {
 
     color: #F4F6F1;
-    font-size: 1.8rem ;
+    font-size: 2rem ;
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .answer-buttons {
     display: grid;
+    justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: auto;
+           
+
 }
 
 .answer-btn {
@@ -272,8 +279,29 @@ input:checked+.slider:before {
         font-size: 1.2rem;
         padding: 10px;
         background-color: #f4d71e;
+        border-radius: 20px;
+            border: 2px #fff9e6 solid;
+            outline: 2px solid rgba(0, 0, 0);
+            outline-offset: -8px;
+            font-family: 'Mouse Memoirs', sans-serif;
+            font-size: 1.8rem;
         
 }
+
+#next {
+        display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+                max-width: 20%;
+                justify-self: center;
+                font-size: 1.4rem;
+                margin-left: 40%;
+                
+        
+}
+
+
+
 /* Footer */
 
 footer {
