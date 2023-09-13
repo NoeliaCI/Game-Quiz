@@ -536,6 +536,14 @@ footer {
         
     }
 
+    /* Quiz start screen */
+        #start-btn {
+            font-size: 1.4rem;
+        }
+        .start-quiz-content h2 {
+            font-size: 2rem;
+        }
+
     
 
     /* Footer */
