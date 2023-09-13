@@ -435,28 +435,51 @@ footer {
 /*Media Queries*/
 
 /* Media Queries for tablets and larger screens*/
-@media screen and (max-width:770px) {
+@media screen and (min-width:769px) and (max-width: 968px) {
+   
+   
+   header {
+    height: auto;
+   }
+   .main-image {
+    margin-top: 10%;
+   }
     .quiz-container {
         display: flex;
         justify-content: center;
         width: 80%;
-        margin-top: 20%;
         margin-left: 10%;
-    }
+        
+    } 
+         
+           #media-player {
+               height: 50px;
+               width: 40%;
+           }
+    
+     
 
     /* Home Screen */
 
     .home-container {
         width: 100%;
     }
+
+         /* How to play Screen */
+         #how-to-play-home-btn {
+             font-size: 1.4rem;
+             margin-bottom: 50px;
+    
+         }
+
 }
 
 
 
 /* Media Query for mobile phones and small screens */
 
-@media screen and (min-width: 250px) and (max-width: 767px) {
-    
+@media screen and (min-width: 250px) and (max-width: 768px) {
+
     /*Main screen */
 
     .main-image {
@@ -464,7 +487,7 @@ footer {
     }
 
     header {
-        height: 500px;
+        height: 580px;
 
     }
 
@@ -476,37 +499,53 @@ footer {
 
         font-size: 0.8rem;
     }
+    .quiz-container{
+        height: auto;
+    }   
+
     /* Home Screen */
 
     .button {
         font-size: 1.3rem;
     }
 
-    .quiz-container {
-        height: auto;
-    }
+   
 
     /* Sound Icon */
 
-        .switch {
-            width: 1.6rem;
-            height: 0.8rem;
-        }
+    .switch {
+        width: 1.6rem;
+        height: 0.8rem;
+    }
 
-        .slider:before{
-            height: 0.5rem;
-                width: 0.5rem;
-                left: 0.1rem;
-                bottom: 0.1rem;
-                border-radius: 0.5rem;
-        }
+    .slider:before {
+        height: 0.5rem;
+        width: 0.5rem;
+        left: 0.1rem;
+        bottom: 0.1rem;
+        border-radius: 0.5rem;
+    }
+
+    /* How to play Screen */
+    #how-to-play-home-btn {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+        
+    }
+
+    
+
     /* Footer */
 
-        #audio-container p {
-            font-size: 20px;
-}
+    #audio-container p {
+        font-size: 20px;
+    }
 
-#media-player {
-    height: 40px;
-    width: 75%;
+    #media-player {
+        height: 40px;
+        width: 70%;
+    }
+
+
+
 }
