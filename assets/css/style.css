@@ -204,6 +204,13 @@ input:checked+.slider:before {
 
 /* Leaderboard Screen */
 
+
+.leaderboard-container {
+    height: 400px;
+    
+}
+
+
 .leaderboard-content {
     display: grid;
     justify-content: center;
@@ -225,7 +232,7 @@ input:checked+.slider:before {
 #leaderboard-home-btn {
     font-size: 2em;
     max-width: 85%;
-    margin-top: 25%;
+    margin-top: 85%;
     margin-left: 15%;
 
 }
@@ -435,7 +442,7 @@ footer {
 /*Media Queries*/
 
 /* Media Queries for tablets and larger screens*/
-@media screen and (min-width:769px) and (max-width: 968px) {
+@media screen and (min-width:768px) and (max-width: 968px) {
    
    
    header {
@@ -452,11 +459,7 @@ footer {
         
     } 
          
-           #media-player {
-               height: 50px;
-               width: 40%;
-           }
-    
+
      
 
     /* Home Screen */
@@ -478,7 +481,7 @@ footer {
 
 /* Media Query for mobile phones and small screens */
 
-@media screen and (min-width: 250px) and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 767px) {
 
     /*Main screen */
 
