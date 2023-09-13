@@ -207,7 +207,7 @@ input:checked+.slider:before {
 
 .leaderboard-container {
     height: 400px;
-    
+
 }
 
 
@@ -443,24 +443,26 @@ footer {
 
 /* Media Queries for tablets and larger screens*/
 @media screen and (min-width:768px) and (max-width: 968px) {
-   
-   
-   header {
-    height: auto;
-   }
-   .main-image {
-    margin-top: 10%;
-   }
+
+
+    header {
+        height: auto;
+    }
+
+    .main-image {
+        margin-top: 10%;
+    }
+
     .quiz-container {
         display: flex;
         justify-content: center;
         width: 80%;
         margin-left: 10%;
-        
-    } 
-         
 
-     
+    }
+
+
+
 
     /* Home Screen */
 
@@ -468,12 +470,12 @@ footer {
         width: 100%;
     }
 
-         /* How to play Screen */
-         #how-to-play-home-btn {
-             font-size: 1.4rem;
-             margin-bottom: 50px;
-    
-         }
+    /* How to play Screen */
+    #how-to-play-home-btn {
+        font-size: 1.4rem;
+        margin-bottom: 50px;
+
+    }
 
     /* Game screen */
 
@@ -485,7 +487,21 @@ footer {
         max-width: 50%;
     }
 
+    /* Results screen */
+
+    .percentage-container {
+        margin-left: 0;
+    }
+
+    #try-again {
+        width: fit-content;
+    }
+
 }
+
+
+
+
 
 
 
@@ -512,9 +528,10 @@ footer {
 
         font-size: 0.8rem;
     }
-    .quiz-container{
+
+    .quiz-container {
         height: auto;
-    }   
+    }
 
     /* Home Screen */
 
@@ -522,7 +539,7 @@ footer {
         font-size: 1.3rem;
     }
 
-   
+
 
     /* Sound Icon */
 
@@ -543,30 +560,44 @@ footer {
     #how-to-play-home-btn {
         font-size: 1.3rem;
         margin-bottom: 30px;
-        
+
     }
 
     /* Quiz start screen */
-        #start-btn {
-            font-size: 1.4rem;
-        }
-        .start-quiz-content h2 {
-            font-size: 2rem;
-        }
+    #start-btn {
+        font-size: 1.4rem;
+    }
+
+    .start-quiz-content h2 {
+        font-size: 2rem;
+    }
+
     /* Game Screen */
 
     .question {
         font-size: 1.5rem;
     }
-    
+
     .answer-btn {
         font-size: 1.3rem;
         max-width: fit-content;
     }
+
     #next {
         font-size: 1.3rem;
-        
+
     }
+
+    /* Results screen */
+
+    .percentage-container {
+        margin-left: 0;
+    }
+
+    #try-again {
+        width: fit-content;
+    }
+
     /* Footer */
 
     #audio-container p {
