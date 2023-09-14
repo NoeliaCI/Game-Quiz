@@ -40,7 +40,7 @@
       <section class="quiz-container">
         <!-- Home screen-->
 
-        <div id="home" class="home-container">
+        <div id="home-container" class="container">
           <div class="top-info">
             <div>
               <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
@@ -64,7 +64,7 @@
 
         <!-- How to play screen -->
 
-        <div id="how-to-play" class="=how-to-play-container hide">
+        <div id="how-to-play-container" class="container hide">
           <div class="top-info">
             <div>
               <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
@@ -109,7 +109,7 @@
 
         <!-- Leaderboard Screen -->
 
-        <div id="leaderboard" class="leaderboard-container hide">
+        <div id="leaderboard-container" class="container hide">
           <div class="top-info">
             <div>
               <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
@@ -130,8 +130,8 @@
             </div>
           </div>
         </div>
-        <!-- Enter name screen -->
-        <div id="enter-name" class="enter-name-container hide">
+        <!-- Start Quiz screen -->
+        <div id="start-quiz-container" class="container hide">
             <div class="top-info">
                 <div>
                     <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
@@ -144,17 +144,14 @@
                     </label>
                 </div>
             </div>
-            <div class="enter-name-content">
-                <h2>Enter Your Name</h2>
-                <form id="submit-name" onsubmit="return validateName()" method="post">
-                    <input id="name" type="text" required>
-                    <button type="submit" id="submit" class="button">Submit</button>
-                </form>
+            <div class="start-quiz-content">
+                <h2>Are you ready to play?</h2>
+                <button id="start-btn" class="button">Start</button>
             </div>
         </div>
 
             <!-- Quiz screen -->
-            <div id="questions" class="questions-container hide">
+            <div id="questions-container" class="container hide">
                 <div class="top-info">
                     <div>
                         <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
