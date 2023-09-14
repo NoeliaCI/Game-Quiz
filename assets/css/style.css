@@ -100,7 +100,7 @@ header h1 {
 
 button:hover {
     background: #f9f9f9;
-    cursor: url('/assets/images/donut-cursor.cur'), auto;
+    cursor: url('assets/images/donut-cursor.cur'), auto;
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
