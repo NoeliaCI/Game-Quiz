@@ -100,7 +100,7 @@ header h1 {
 
 button:hover {
     background: #f9f9f9;
-    cursor: url('assets/images/donut-cursor.cur'), auto;
+    cursor: url('/assets/images/donut-cursor.cur'), auto;
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -239,13 +239,13 @@ input:checked+.slider:before {
 
 /* Start Quiz Screen */
 
-.enter-name-content {
+.start-quiz-content {
     display: grid;
     justify-content: center;
     color: #F4F6F1;
 }
 
-.enter-name-content h2 {
+.start-quiz-content h2 {
     font-size: 3em;
     letter-spacing: 0.5rem;
     text-align: center;
@@ -253,17 +253,11 @@ input:checked+.slider:before {
     margin-bottom: 40px;
 }
 
-.enter-name-content .button {
-    font-size: 2em;
+.start-quiz-content .button {
+    font-size: 3em;
     max-width: 85%;
     margin-top: 25%;
     margin-left: 15%;
-
-}
-#name {
-    width: 100%;
-    height: 3rem;
-    border-radius: 1rem;
 
 }
 
