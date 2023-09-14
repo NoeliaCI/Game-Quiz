@@ -23,6 +23,37 @@ const goHomeResults = document.getElementById('results-go-home');
 const goHomeHowToPlay = document.getElementById('how-to-play-home-btn');
 //Leaderboard Screen
 const goHomeLeaderboard = document.getElementById('leaderboard-home-btn');
-
+//Game Sounds
+const rightAnswerSound = new Audio('assets/sounds/right-answer.mp3');
+const wrongAnswerSound = new Audio('assets/sounds/wrong-answer.mp3');
+const clickSound = new Audio('assets/sounds/mouse-click.mp3');
+let soundSlider = document.getElementsByClassName('sound-slider');
+//This function plays the right sound when the answer selected is correct
+function playRightSound() {
+    if (!soundSlider.checked) {
+        return;
+    } else if (soundSlider.checked) {
+        rightAnswerSound.volume = 0.1;
+        rightAnswerSound.play();
+    }
+}
+//This function plays the wrong sound when the answer selected is incorrect
+function playWrongSound() {
+    if (!soundSlider.checked) {
+        return;
+    } else if (soundSlider.checked) {
+        wrongAnswerSound.volume = 0.1;
+        wrongAnswerSound.play();
+    }
+}
+//This function plays the mouse click sound when a button is clicked
+function playClickSound() {
+    if (!soundSlider.checked) {
+        return;
+    } else if (soundSlider.checked) {
+        clickSound.volume = 0.1;
+        clickSound.play();
+    }
+}
 
 
