@@ -7,8 +7,7 @@ const howToPlayBtn = document.getElementById('how-to-play-btn');
 const homeButtonIcon = document.getElementById('home-button');
 
 //Quiz Screen
-const submitBtn = document.getElementById('submit');
-const enterName = document.getElementById('enter-name');
+const startBtn = document.getElementById('start-btn');
 const answerButton1 = document.getElementById('answer1');
 const answerButton2 = document.getElementById('answer2');
 const answerButton3 = document.getElementById('answer3');
@@ -30,9 +29,9 @@ const goHomeHowToPlay = document.getElementById('how-to-play-home-btn');
 const goHomeLeaderboard = document.getElementById('leaderboard-home-btn');
 
 //Game Sounds
-const rightAnswerSound = new Audio('assets/sounds/right-answer.mp3');
-const wrongAnswerSound = new Audio('assets/sounds/wrong-answer.mp3');
-const clickSound = new Audio('assets/sounds/mouse-click.mp3');
+const rightAnswerSound = new Audio('assets/sounds/right_answer.mp3');
+const wrongAnswerSound = new Audio('assets/sounds/wrong_answer.mp3');
+const clickSound = new Audio('assets/sounds/mouse_click.mp3');
 let soundSlider = document.getElementsByClassName('sound-slider');
 //This function plays the right sound when the answer selected is correct
 function playRightSound() {
@@ -63,11 +62,11 @@ function playClickSound() {
 }
 
 //Screen containers
-const homeContainer = document.getElementsByClassName('home-container');
-const howContainer = document.getElementsByClassName('how-to-play-container');
-const leaderboardContainer = document.getElementsByClassName('leaderboard-container');
-const nameContainer = document.getElementsByClassName('name-container');
-const questionsContainer = document.getElementsByClassName('questions-container');
+const homeContainer = document.getElementById('home-container');
+const howContainer = document.getElementById('how-to-play-container');
+const leaderboardContainer = document.getElementById('leaderboard-container');
+const startContainer = document.getElementById('start-quiz-container');
+const questionsContainer = document.getElementById('questions-container');
 
 //Variables
 
@@ -78,20 +77,28 @@ let currentQuestionIndex = 0;
 
 //Event Listeners
 
-//How to play: Open
+/**
+ * Listens for the click of the quiz button in the home screen
+ * runs playClickSound function
+ * adds or removes the hide class
+ * enters the start quiz screen
+ */
 
+quizBtn.addEventListener('click', () => {
+    playClickSound();
+    homeContainer.classList.add("hide");
+    startContainer.classList.remove("hide");
+});
+
+
+
+
+/**
+ * Listens for the click on the how to play button on the home screen
+ * adds and removes the hide class to show the how to play screen
+ */
 howToPlayBtn.addEventListener('click', () => {
-    homeContainer.classList.add('hide');
-    howContainer.classList.remove('hide');
     playClickSound();
-
+    homeContainer.classList.add("hide");
+    howContainer.classList.remove("hide");
 });
-// How to play: Close
-goHomeHowToPlay.addEventListener('click', () => {
-    howContainer.classList.add('hide');
-    homeContainer.classList.remove('hide');
-    playClickSound();
-});
-
-
-
