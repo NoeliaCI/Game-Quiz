@@ -130,8 +130,8 @@
             </div>
           </div>
         </div>
-        <!-- Start quiz screen -->
-        <div id="start-quiz" class="start-quiz-container hide">
+        <!-- Enter name screen -->
+        <div id="enter-name" class="enter-name-container hide">
             <div class="top-info">
                 <div>
                     <i class="fa-solid fa-house fa-xl home-button" style="color: #f9f9f9"></i>
@@ -144,9 +144,12 @@
                     </label>
                 </div>
             </div>
-            <div class="start-quiz-content">
-                <h2>Are you ready to play?</h2>
-                <button id="start-btn" class="button">Start</button>
+            <div class="enter-name-content">
+                <h2>Enter Your Name</h2>
+                <form id="submit-name" onsubmit="return validateName()" method="post">
+                    <input id="name" type="text" required>
+                    <button type="submit" id="submit" class="button">Submit</button>
+                </form>
             </div>
         </div>
 
@@ -248,5 +251,9 @@
         </ul>
       </div>
     </footer>
+    <!-- JavaScript files -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
+    
   </body>
 </html>
