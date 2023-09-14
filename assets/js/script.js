@@ -26,6 +26,7 @@ const goHomeResults = document.getElementById('results-go-home');
 const goHomeHowToPlay = document.getElementById('how-to-play-home-btn');
 
 //Leaderboard Screen
+const leaderboardList = document.getElementById('leaderboard-list');
 const goHomeLeaderboard = document.getElementById('leaderboard-home-btn');
 
 //Game Sounds
@@ -75,6 +76,9 @@ let shuffledQuestions;
 let shuffledAnswers;
 let currentQuestionIndex = 0;
 
+//Add this to high scores file later
+const highScores = JSON.parse(localStorage.getItem('highscores')) || [];
+
 //Event Listeners
 
 /**
@@ -91,10 +95,8 @@ quizBtn.addEventListener('click', () => {
 });
 
 
-
-
 /**
- * Listens for the click on the how to play button on the home screen
+ * Listens for the click of the how to play button on the home screen
  * adds and removes the hide class to show the how to play screen
  */
 howToPlayBtn.addEventListener('click', () => {
@@ -102,3 +104,31 @@ howToPlayBtn.addEventListener('click', () => {
     homeContainer.classList.add("hide");
     howContainer.classList.remove("hide");
 });
+
+/**
+ * Listens for the click of the leaderboard button 
+ * runs the playClickSound function
+ * adds or removes hide class to go to the leaderboard screen
+ * store the score in local storage
+ */
+
+leaderboardBtn.addEventListener('click', () => {
+    playClickSound();
+    homeContainer.classList.add('hide');
+    leaderboardContainer.classList.remove('hide');
+    leaderboardList.innerHTML = highScores.map(highScores => {
+        return `<li class="high-score">${highScores.name} - ${highScores.score}</li>`;
+    }).join("");
+
+});
+
+/**
+ * Listens for the click of the start button
+ * runs the playClickSound function
+ * runs the runGame function
+ */
+startBtn.addEventListener('click', () => {
+    playClickSound();
+    runGame();
+});
+
