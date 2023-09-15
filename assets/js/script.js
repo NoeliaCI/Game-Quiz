@@ -6,8 +6,12 @@ const leaderboardBtn = document.getElementById('leaderboard-btn');
 const howToPlayBtn = document.getElementById('how-to-play-btn');
 const homeButtonIcon = document.getElementById('home-button');
 
-//Quiz Screen
+//Start Quiz screen
 const startBtn = document.getElementById('start-btn');
+
+
+//Quiz Screen
+
 const answerButton1 = document.getElementById('answer1');
 const answerButton2 = document.getElementById('answer2');
 const answerButton3 = document.getElementById('answer3');
@@ -70,11 +74,13 @@ const startContainer = document.getElementById('start-quiz-container');
 const questionsContainer = document.getElementById('questions-container');
 
 //Variables
-
-let username;
-let shuffledQuestions;
-let shuffledAnswers;
 let currentQuestionIndex = 0;
+let questionNumber = 1;
+let randomQuestions;
+let selectedButton;
+let userScore = 0;
+let correctQuestions = 0; 
+
 
 //Add this to high scores file later
 const highScores = JSON.parse(localStorage.getItem('highscores')) || [];
@@ -132,3 +138,37 @@ startBtn.addEventListener('click', () => {
     runGame();
 });
 
+/**
+ * Function to start the quiz
+ */
+
+function runGame() {
+    let gameLength = 9;
+    startContainer.classList.add('hide');
+    questionsContainer.classList.remove('hide');
+    renderQuestion(randomQuestions[currentQuestionIndex]);
+    nextBtn.addEventListener('click', () => {
+        playClickSound();
+        if (currentQuestionIndex > gameLength) {
+            questionsContainer.classList.add('hide');
+            leaderboardContainer.classList.remove('hide');
+            tryAgainBtn.addEventListener('click', () => {
+                playClickSound();
+                homeContainer.classList.remove('hide');
+                leaderboardContainer.classList.add('hide');
+                currentQuestionIndex = 0;
+                questionNumber = 1;
+                randomQuestions = undefined;
+                userScore = 0;
+                correctQuestions = 0;
+                questionNumberDisplayed.innerText = questionNumber + '/' + '10';
+            });
+
+        } else {
+            renderQuestion(randomQuestions[currentQuestionIndex]);
+            resetQuestionState();
+        }
+    })
+
+
+}
