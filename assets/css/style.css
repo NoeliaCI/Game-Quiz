@@ -224,7 +224,7 @@ button:hover {
     font-size: 1.5em;
 }
 
-.question {
+.question-text {
 
     color: #F4F6F1;
     font-size: 2rem;
@@ -233,7 +233,7 @@ button:hover {
     margin-bottom: 30px;
 }
 
-.answer-buttons {
+.option-list {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -246,7 +246,7 @@ button:hover {
 
 }
 
-.answer-btn {
+.option {
     justify-self: center;
     height: 80px;
     width: 60%;
@@ -498,20 +498,7 @@ footer {
 
 
 
-    /* Sound Icon */
-
-    .switch {
-        width: 1.6rem;
-        height: 0.8rem;
-    }
-
-    .slider:before {
-        height: 0.5rem;
-        width: 0.5rem;
-        left: 0.1rem;
-        bottom: 0.1rem;
-        border-radius: 0.5rem;
-    }
+   
 
     /* How to play Screen */
     #how-to-play-home-btn {
@@ -531,11 +518,11 @@ footer {
 
     /* Game Screen */
 
-    .question {
+    .question-text {
         font-size: 1.5rem;
     }
 
-    .answer-btn {
+    .option {
         font-size: 1.3rem;
         max-width: fit-content;
     }
